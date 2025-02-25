@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffe6ee;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #222222; /* secondary text color */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -122,7 +122,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #80003a;
 		font-weight: 400;
 	}
 
@@ -135,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #80003a;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -190,7 +190,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px #efefef;
+		border-bottom: solid 2px #80003a;
 		margin: 2em 0;
 	}
 
@@ -199,7 +199,7 @@ input, select, textarea {
 		}
 
 	blockquote {
-		border-left: solid 6px #efefef;
+		border-left: solid 6px #80003a;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 1.5em;
@@ -208,7 +208,7 @@ input, select, textarea {
 	code {
 		background: #f7f7f7;
 		border-radius: 0.35em;
-		border: solid 2px #efefef;
+		border: solid 2px #80003a;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -1801,7 +1801,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #787878;
+		color: #80003a;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
@@ -1855,8 +1855,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #787878;
-			background: #fff;
+			color: #80003a;
+			background: #ffe6ee;
 		}
 
 		select:focus::-ms-value {
@@ -1895,7 +1895,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #222222;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -1938,8 +1938,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #787878;
-			border-color: #787878;
+			background: #80003a;
+			border-color: #80003a;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -1981,7 +1981,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 0.35em;
-		border: solid 2px #efefef;
+		border: solid 2px #80003a;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -2174,7 +2174,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 2px #efefef;
+				border-top: solid 2px #80003a;
 				padding: 0.5em 0;
 			}
 
@@ -2374,7 +2374,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #efefef;
+			border: solid 1px #80003a;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -2388,7 +2388,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #787878;
+			color: #80003a;
 			font-size: 0.9em;
 			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2396,11 +2396,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #efefef;
+			border-bottom: solid 2px #80003a;
 		}
 
 		table tfoot {
-			border-top: solid 2px #efefef;
+			border-top: solid 2px #80003a;
 		}
 
 		table.alt {
@@ -2408,7 +2408,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 2px #efefef;
+				border: solid 2px #80003a;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2445,8 +2445,8 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
+		border: solid 3px #80003a; /* border of button color */
+		color: #80003a !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2464,15 +2464,15 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #f7cdda;
-			color: #f7cdda !important;
+			background-color: #80003a;
+			color: #fff !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
+			background-color: rgba(191, 73, 165, 0.1);
 			border-color: #f7cdda;
 			color: #f7cdda !important;
 		}
@@ -2526,8 +2526,8 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #80003a;
+				border-color: #80003a;
 			}
 
 			input[type="submit"].primary:active,
@@ -2640,7 +2640,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 10em;
 		}
 
 /* Footer */
@@ -2689,7 +2689,7 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
+			border-top: solid 2px #80003a;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}

@@ -2,31 +2,83 @@
 
 {% block head %}
   {{ super() }}
-  <!-- Link the Multiverse (gallery) CSS -->
+  <!-- Gallery (Multiverse) CSS -->
   <link rel="stylesheet" href="/assets/css/gallery.css">
-  <!-- Optionally, more CSS if needed... -->
 {% endblock head %}
 
 {% block content %}
-  <!-- HTML from the Multiverse template, adapted to your site -->
-  <section id="main">
-    <div class="posts">
-      <article class="thumb">
-        <a href="/assets/images/fulls/01.jpg" class="image"><img src="/assets/images/thumbs/01.jpg" alt="" /></a>
-        <h2>Photo Title 1</h2>
-      </article>
-      <article class="thumb">
-        <a href="/assets/images/fulls/02.jpg" class="image"><img src="/assets/images/thumbs/02.jpg" alt="" /></a>
-        <h2>Photo Title 2</h2>
-      </article>
-    </div>
-  </section>
+<h1><strong>Gallery</strong></h1>
+<div id="main">
+  <!-- Each "thumb" article has a .image anchor with background-image. 
+       Text is layered on top because the image is set via CSS background. -->
+  <article class="thumb">
+    <a href="/images/fulls/01.jpg" class="image" style="background-image: url('/images/thumbs/01.jpg');"></a>
+    <h2>WOW SO TALENTED</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/02.jpg" class="image" style="background-image: url('/images/thumbs/02.jpg');"></a>
+    <h2>LOVE</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/03.jpg" class="image" style="background-image: url('/images/thumbs/03.jpg');"></a>
+    <h2>OMG</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/04.jpg" class="image" style="background-image: url('/images/thumbs/04.jpg');"></a>
+    <h2>So Amazing</h2>
+  </article>
+
+   <article class="thumb">
+    <a href="/images/fulls/05.jpg" class="image" style="background-image: url('/images/thumbs/05.jpg');"></a>
+    <h2>Wow</h2>
+  </article>
+
+   <article class="thumb">
+    <a href="/images/fulls/06.jpg" class="image" style="background-image: url('/images/thumbs/06.jpg');"></a>
+    <h2>So Pretty</h2>
+  </article>
+  <article class="thumb">
+    <a href="/images/fulls/07.jpg" class="image" style="background-image: url('/images/thumbs/07.jpg');"></a>
+    <h2>WOW SO TALENTED</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/08.jpg" class="image" style="background-image: url('/images/thumbs/08.jpg');"></a>
+    <h2>LOVE</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/09.jpg" class="image" style="background-image: url('/images/thumbs/09.jpg');"></a>
+    <h2>OMG</h2>
+  </article>
+
+  <article class="thumb">
+    <a href="/images/fulls/10.jpg" class="image" style="background-image: url('/images/thumbs/10.jpg');"></a>
+    <h2>So Amazing</h2>
+  </article>
+
+   <article class="thumb">
+    <a href="/images/fulls/11.jpg" class="image" style="background-image: url('/images/thumbs/11.jpg');"></a>
+    <h2>Wow</h2>
+  </article>
+
+   <article class="thumb">
+    <a href="/images/fulls/12.jpg" class="image" style="background-image: url('/images/thumbs/12.jpg');"></a>
+    <h2>So Pretty</h2>
+  </article>
+</div>
 {% endblock content %}
 
 {% block foot %}
-  {{ super() }}
-  <!-- jQuery + Poptrox (Lightbox) scripts from the template -->
-  <script src="/assets/js/jquery.min.js"></script>
-  <script src="/assets/js/jquery.poptrox.min.js"></script>
-  <script src="/assets/js/gallery.js"></script> 
+  {# {{ super() }} #}
+  <!-- Optional: For the lightbox effect. If you want the poptrox plugin: -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="/assets/js/gallery.js"></script>
 {% endblock foot %}

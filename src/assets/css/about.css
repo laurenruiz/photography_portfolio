@@ -1,0 +1,173 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+/*
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* RESET / BASE STYLES (unchanged) */
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Any other normalizations you had remain here */
+
+/* Base body styles (unchanged) */
+body {
+	-webkit-text-size-adjust: none;
+	background: #ffe6ee; /* Pinkish background */
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+	color: #222222;
+}
+
+/* HEADINGS, TEXT, ETC. (unchanged) */
+h1, h2, h3, h4, h5, h6 {
+	color: #80003a;
+	font-weight: 400;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+}
+p {
+	margin: 0 0 2em 0;
+}
+/* ... etc. all your existing typography remains ... */
+
+/* LINKS (unchanged) */
+a {
+	border-bottom: dotted 1px;
+	color: #f7cdda;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+a:hover {
+	border-bottom-color: transparent;
+	color: #f7cdda !important;
+	text-decoration: none;
+}
+
+/* Keep your forms, blockquote, code, etc. 
+   exactly as in the original about.css. */
+
+/* [MOD CHANGE #1]: Make #header full width, no fixed positioning */
+#header {
+	/* Remove position: fixed; left: 0; width: 35%; etc. */
+	background-color: #1f1815;
+	background-image: radial-gradient(circle, rgba(224,92,144,1) 9%, rgba(244,134,150,1) 36%, rgba(207,179,213,1) 68%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgba(255, 255, 255, 0.5);
+
+	/* Adjust padding for a more phone-like layout if you want: */
+	padding: 4em 2em; 
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* If you had inner elements in #header, keep them: */
+#header h1 {
+	color: rgb(255, 255, 255);
+	font-size: 2.5em;
+	line-height: 1.75em;
+	margin: 0;
+}
+
+#header h2 {
+	color: rgba(255, 255, 255, 0.699);
+	font-size: 1.75em;
+	line-height: 1.75em;
+	margin: 0;
+}
+
+#header .image {
+	margin: 0 auto 1em auto;
+	width: 12em;
+	display: block;
+	border-radius: 0.35em;
+	border: 0;
+    img {
+        max-width: 100%;
+        display: block;
+        border-radius: 100%;
+    }
+}
+
+/* .image { */
+    /* container styles, if any */
+    /* margin: 0 auto;
+    max-width: 400px;  if you want a limit; otherwise remove this */
+  /* }
+  
+  .image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto;
+  } */
+/* etc. */
+
+/* [MOD CHANGE #2]: #main also full width, no margin-left offset */
+#main {
+	/* Remove margin-left: 35%; width: calc(100% - 35%); */
+	margin: 0 auto;     /* center if you later add a max-width */
+	width: 100%;
+	max-width: 100%;    
+	padding: 4em 2em;   /* phone-friendly spacing */
+	box-sizing: border-box;
+}
+
+/* If you want a max content width, you could do:
+   #main { max-width: 60em; margin: 0 auto; }
+   to limit the text width but keep it centered. 
+   Otherwise 100% is fully fluid. */
+
+/* Keep your other #main > section or .row styles as is: */
+#main > section {
+	border-top: solid 2px #80003a;
+	margin: 4em 0 0 0;
+	padding: 4em 0 0 0;
+}
+#main > section:first-child {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.about-text {
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+/* .image rules, etc. remain so your images 
+   get the same styling as your main layout. 
+   If your about page references .image or .about-image, 
+   keep that style here: */
+
+
+/* etc. */
+
+/* FOOTER (unchanged) 
+   If you have #footer, keep it full width or phone style. */
+
+/* Additional media queries remain unchanged 
+   so it will adapt to smaller screens as you wanted. */
