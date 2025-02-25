@@ -1,0 +1,77 @@
+/* A simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #ffe6ee;
+  }
+  
+  /* Header Bar (toolbar at the top) */
+  .header-bar {
+    background-color: #f48696; /* toolbar bg color*/
+    color: #ffffff;
+    padding: 1rem 0;
+  }
+  
+  .toolbar {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Wrap icon + text together */
+.icon-link {
+    position: relative;
+    display: inline-flex; /* or inline-block */
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* By default, hide the text portion */
+  .icon-link span {
+    display: none; 
+    margin-left: 0.5rem; /* space between icon and text */
+  }
+  
+  /* Show the text when hovering over the entire link */
+  .icon-link:hover span {
+    display: inline-block;
+  }  
+
+  .icon-link i {
+    font-size: 1.2rem; /* or any size you prefer, e.g. 24px */
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin: 2rem auto;
+    color: #444;
+  }
+  

@@ -1,1 +1,2 @@
 # photography_portfolio
+Hi! This is a Portfolio Website I am making for my best friend Frances. She is an amazing photographer and I'm building this website to show the world just how amazing her photos are!

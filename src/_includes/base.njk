@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+
+  {% block head %}{% endblock head %}
+</head>
+<body>
+  <header class="header-bar">
+    <div class="toolbar nav-links">
+      <a href="/" class="icon-link">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="/about/" class="icon-link">
+        <i class="fas fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="/gallery/" class="icon-link">
+        <i class="fas fa-images"></i>
+        <span>Gallery</span>
+      </a>
+      <a href="/contact/" class="icon-link">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock content %}
+  </main>
+
+  <footer class="footer">
+    <p>&copy; {{ title }} — Built by Nooby</p>
+  </footer>
+</body>
+</html>

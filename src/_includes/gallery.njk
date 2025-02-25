@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+
+{% block head %}
+  {{ super() }}
+  <!-- Link the Multiverse (gallery) CSS -->
+  <link rel="stylesheet" href="/assets/css/gallery.css">
+  <!-- Optionally, more CSS if needed... -->
+{% endblock head %}
+
+{% block content %}
+  <!-- HTML from the Multiverse template, adapted to your site -->
+  <section id="main">
+    <div class="posts">
+      <article class="thumb">
+        <a href="/assets/images/fulls/01.jpg" class="image"><img src="/assets/images/thumbs/01.jpg" alt="" /></a>
+        <h2>Photo Title 1</h2>
+      </article>
+      <article class="thumb">
+        <a href="/assets/images/fulls/02.jpg" class="image"><img src="/assets/images/thumbs/02.jpg" alt="" /></a>
+        <h2>Photo Title 2</h2>
+      </article>
+    </div>
+  </section>
+{% endblock content %}
+
+{% block foot %}
+  {{ super() }}
+  <!-- jQuery + Poptrox (Lightbox) scripts from the template -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/gallery.js"></script> 
+{% endblock foot %}

@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+
+{% block head %}
+  <!-- Insert any extra CSS/JS for the home layout -->
+  {{ super() }}
+  <link rel="stylesheet" href="/assets/css/main.css">
+{% endblock head %}
+
+{% block content %}
+  <!-- Optional: If you want to keep the parent's content, do first -->
+  {{ super() }}
+
+  <!-- Then add your special sections -->
+  <section id="banner">
+    <!-- ... Strata banner ... -->
+  </section>
+
+  <section id="one">
+    <!-- ... "Ipsum lorem" text and Learn More button ... -->
+  </section>
+
+  <section id="two">
+    <!-- ... Recent Work cards ... -->
+  </section>
+{% endblock content %}
